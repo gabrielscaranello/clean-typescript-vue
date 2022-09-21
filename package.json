@@ -5,13 +5,13 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite --port 8080",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc && vite build --emptyOutDir",
     "prepare": "husky install",
     "test": "jest --passWithNoTests --no-cache --runInBand",
     "test:watch": "npm test -- --watch",
     "test:staged": "npm test -- --findRelatedTests",
     "test:ci": "npm test -- --coverage",
-    "lint": "eslint . --ext .vue,.js,.cjs,.ts --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.ts --fix --ignore-path .gitignore"
   },
   "devDependencies": {
     "@quasar/vite-plugin": "^1.2.1",

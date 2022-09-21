@@ -6,7 +6,7 @@ module.exports = {
   extends: ['standard-with-typescript', 'prettier'],
   plugins: ['prettier'],
   parserOptions: {
-    project: './tsconfig.json'
+    project: './tsconfig.eslint.json'
   },
   rules: {
     'prettier/prettier': ['error'],

@@ -19,6 +19,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
+      '@/vue': fileURLToPath(new URL('./src/application', import.meta.url)),
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   }

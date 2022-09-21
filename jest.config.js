@@ -11,6 +11,8 @@ module.exports = {
     '.+\\.(ts|vue)$': 'ts-jest'
   },
   moduleNameMapper: {
+    '@/tests/(.+)': '<rootDir>/tests/$1',
+    '@/vue/(.*)': '<rootDir>/src/application/$1',
     '@/(.*)': '<rootDir>/src/$1',
     '\\.sass$': 'identity-obj-proxy'
   }
