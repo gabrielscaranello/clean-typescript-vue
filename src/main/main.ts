@@ -1,6 +1,6 @@
-import App from './App.vue'
 import { createApp } from 'vue'
-import { setupQuasar } from './utils/quasar'
+import { setupQuasar } from '@/presentation/utils'
+import App from '@/main/App.vue'
 
 const app = createApp(App)
 

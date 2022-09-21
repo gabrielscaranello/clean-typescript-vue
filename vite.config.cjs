@@ -6,7 +6,7 @@ import { quasar, transformAssetUrls } from '@quasar/vite-plugin'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
-  root: resolve(__dirname, 'src/application'),
+  root: resolve(__dirname, 'src/main'),
   build: {
     outDir: resolve(__dirname, 'dist')
   },
@@ -19,7 +19,6 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@/vue': fileURLToPath(new URL('./src/application', import.meta.url)),
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   }
