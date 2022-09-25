@@ -11,16 +11,19 @@
     "test:watch": "npm test -- --watch",
     "test:staged": "npm test -- --findRelatedTests",
     "test:ci": "npm test -- --coverage",
-    "lint": "eslint . --ext .vue,.ts --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.ts --fix --ignore-path .gitignore",
+    "format": "prettier --write \"src/**/*.{ts,vue,html}\""
   },
   "devDependencies": {
     "@quasar/vite-plugin": "^1.2.1",
     "@rushstack/eslint-patch": "^1.2.0",
     "@types/jest": "^29.0.3",
-    "@types/node": "^18.7.18",
+    "@types/node": "^18.7.19",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.38.0",
     "@vitejs/plugin-vue": "^3.1.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^11.0.2",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard-with-typescript": "^23.0.0",
